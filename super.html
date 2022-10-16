@@ -1,0 +1,16 @@
+<script>
+    class a{
+        constructor(){
+            console.log("a");
+        }
+    }
+    class b extends a{
+        constructor(){
+            console.log("b");
+            super();//call const from parent
+            console.log(this);
+        }
+    }
+    var rec=new b;
+
+</script>

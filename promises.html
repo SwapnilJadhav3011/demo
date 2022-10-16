@@ -1,0 +1,16 @@
+<script>
+    var record = new Promise((res,rej)=>{
+        console.log(typeof res, typeof rej);
+       // res("task is complated")
+     rej("task is incomplated")
+    })
+    console.log(record);
+    record.then((value)=>{
+        console.log(value);
+    }) // then is handler for resovled values
+   .catch((error)=>{
+    console.log(error);
+   })
+   .finally(()=>{
+    console.log("let go for another task");})
+</script>
